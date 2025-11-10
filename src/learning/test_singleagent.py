@@ -40,11 +40,11 @@ import shared_constants
 STARTING_POINT = np.array([[0, 0, 1.2]])
 
 
-def selective_noise(obs, mean=0.1, dev=0.05):
-    noise = np.random.normal(mean, dev, size=(12,))
-    obs[10] += noise[10]
-    obs[11] += noise[11]
-    return obs
+# def selective_noise(obs, mean=0.1, dev=0.05):
+#     noise = np.random.normal(mean, dev, size=(12,))
+#     obs[10] += noise[10]
+#     obs[11] += noise[11]
+#     return obs
 
 
 def white_noise(obs):
