@@ -120,14 +120,14 @@ if __name__ == "__main__":
                     verbose=1,
                     seed=0
                     )
-    if ARGS.algo == 'ppo':
-        model = PPO(a2cppoMlpPolicy,
-                    train_env,
-                    policy_kwargs=onpolicy_kwargs,
-                    tensorboard_log=filename + '/tb/',
-                    verbose=1,
-                    seed=0
-                    )
+    # if ARGS.algo == 'ppo':
+    #     model = PPO(a2cppoMlpPolicy,
+    #                 train_env,
+    #                 policy_kwargs=onpolicy_kwargs,
+    #                 tensorboard_log=filename + '/tb/',
+    #                 verbose=1,
+    #                 seed=0
+    #                 )
 
     #### Off-policy algorithms #################################
     offpolicy_kwargs = dict(activation_fn=torch.nn.ReLU,
