@@ -78,16 +78,16 @@ if __name__ == "__main__":
         path = ARGS.exp + '/success_model.zip'
     else:
         print("[ERROR]: no model under the specified path", ARGS.exp)
-    if algo == 'a2c':
-        model = A2C.load(path)
-    if algo == 'ppo':
-        model = PPO.load(path)
-    if algo == 'sac':
-        model = SAC.load(path)
-    if algo == 'td3':
-        model = TD3.load(path)
-    if algo == 'ddpg':
-        model = DDPG.load(path)
+    # if algo == 'a2c':
+    #     model = A2C.load(path)
+    # if algo == 'ppo':
+    #     model = PPO.load(path)
+    # if algo == 'sac':
+    #     model = SAC.load(path)
+    # if algo == 'td3':
+    #     model = TD3.load(path)
+    # if algo == 'ddpg':
+    #     model = DDPG.load(path)
 
     #### Parameters to recreate the environment ################
     env_name = ARGS.exp.split("-")[1] + "-aviary-v0"
